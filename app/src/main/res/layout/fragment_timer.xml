@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_start_end"
+        android:paddingTop="@dimen/padding_top_bottom"
+        android:paddingEnd="@dimen/padding_start_end"
+        android:paddingBottom="@dimen/padding_top_bottom"
+        tools:context=".presentation.timerscreen.TimerFragment">
+
+        <ImageView
+            android:id="@+id/timer_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/timer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/timer_image" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_indicator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:progress="75" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:letterSpacing=".01"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_indicator"
+            app:layout_constraintEnd_toEndOf="@+id/progress_indicator"
+            app:layout_constraintStart_toStartOf="@+id/progress_indicator"
+            app:layout_constraintTop_toTopOf="@+id/progress_indicator"
+            tools:text="3:59" />
+
+
+        <TextView
+            android:id="@+id/start_pause_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/tap_to_pause"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            app:layout_constraintBottom_toBottomOf="@+id/timer_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/timer_image"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/text_button"
+            android:layout_width="wrap_content"
+            app:icon="@drawable/ic_round_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/done_button"
+            style="@style/FAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:contentDescription="@string/back"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_round_done_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

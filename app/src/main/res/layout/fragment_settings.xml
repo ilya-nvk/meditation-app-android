@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_start_end"
+        android:paddingTop="@dimen/padding_top_bottom"
+        android:paddingEnd="@dimen/padding_start_end"
+        android:paddingBottom="@dimen/padding_top_bottom"
+        tools:context=".presentation.settingsscreen.SettingsFragment">
+
+        <TextView
+            android:id="@+id/thank_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/thank_the_developer"
+            android:textColor="@color/colorText"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/dollar2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/back_button_settings"
+            style="@style/text_button"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/back"
+            app:icon="@drawable/ic_round_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/dollar2"
+            style="@style/contained_button"
+            android:layout_width="0dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/dollar_2"
+            app:layout_constraintBottom_toTopOf="@+id/dollar10"
+            app:layout_constraintEnd_toStartOf="@+id/dollar5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/dollar5"
+            style="@style/contained_button"
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/dollar_5"
+            app:layout_constraintBottom_toTopOf="@+id/dollar20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dollar2"
+            app:layout_constraintTop_toTopOf="@+id/dollar2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/dollar10"
+            style="@style/contained_button"
+            android:layout_width="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dollar_10"
+            app:layout_constraintBottom_toTopOf="@+id/back_button_settings"
+            app:layout_constraintEnd_toStartOf="@+id/dollar20"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dollar2" />
+
+        <Button
+            android:id="@+id/dollar20"
+            style="@style/contained_button"
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/dollar_20"
+            app:layout_constraintBottom_toBottomOf="@+id/dollar10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dollar10"
+            app:layout_constraintTop_toBottomOf="@+id/dollar5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

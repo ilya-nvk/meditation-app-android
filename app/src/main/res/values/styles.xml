@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/startGradient</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="SliderStyle" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="labelBehavior">gone</item>
+    </style>
+
+    <style name="FAB">
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="headline">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserrat_black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="contained_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="text_button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+</resources>

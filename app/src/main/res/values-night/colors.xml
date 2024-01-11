@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="background">#000000</color>
+    <color name="lightShadow">#FFFFFF</color>
+    <color name="darkShadow">#000000</color>
+    <color name="startGradient">#000000</color>
+    <color name="endGradient">#000000</color>
+</resources>

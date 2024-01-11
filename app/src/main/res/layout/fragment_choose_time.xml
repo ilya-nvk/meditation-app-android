@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_start_end"
+        android:paddingTop="@dimen/padding_top_bottom"
+        android:paddingEnd="@dimen/padding_start_end"
+        android:paddingBottom="@dimen/padding_top_bottom"
+        tools:context=".presentation.choosetimescreen.ChooseTimeFragment">
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/time_slider"
+            style="@style/SliderStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/choose_time"
+            android:valueFrom="1.0"
+            android:valueTo="30.0"
+            app:layout_constraintBottom_toTopOf="@+id/start_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/time_value_text"
+            style="@style/headline"
+            android:text="@string/choose_time"
+            app:layout_constraintBottom_toTopOf="@+id/time_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/contained_button"
+            android:layout_width="match_parent"
+            android:clickable="false"
+            android:enabled="false"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

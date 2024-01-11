@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meditation">Медитация</string>
+    <string name="choose_sound">Выберите звук</string>
+    <string name="silence">Тишина</string>
+    <string name="ocean">Океан</string>
+    <string name="time">Время</string>
+    <string name="pause">пауза</string>
+    <string name="back">назад</string>
+    <string name="forest">Лес</string>
+    <string name="storm">Буря</string>
+    <string name="settings">настройки</string>
+    <string name="thank_the_developer">Поблагодарить разработчика</string>
+    <string name="music">Музыка</string>
+    <string name="min">1 мин</string>
+    <string name="mins">%1$d мин</string>
+    <string name="start">Начать</string>
+    <string name="choose_time">Выберите время</string>
+    <string name="tap_to_pause">Нажмите на таймер, чтобы приостановить</string>
+    <string name="tap_to_continue">Нажмите на таймер, чтобы продолжить</string>
+    <string name="thanks">Спасибо!</string>
+    <string name="timer">таймер</string>
+</resources>
